@@ -729,7 +729,7 @@ main.container {
     padding: 60px 0 30px;
     font-family: 'Inter', sans-serif;
     border-top: 2px solid #FFD700;
-    width: 100%;
+    width: 100vw;
     max-width: 100%;
     overflow: hidden;
     position: relative;
@@ -1412,20 +1412,72 @@ body > h1:first-of-type:not(.heading) {
 @media (max-width: 992px) {
     .footer-container {
         grid-template-columns: 1fr 1fr;
+        gap: 30px;
     }
     
     .footer-brand {
         grid-column: 1 / -1;
     }
+
+    .footer-description {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
-    .footer-container {
-        grid-template-columns: 1fr;
-    }
-    
     .footer {
         padding: 40px 0 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .footer-brand {
+        padding: 0;
+    }
+    
+    .footer-logo-section {
+        justify-content: center;
+    }
+    
+    .footer-description {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .footer-column {
+        text-align: center;
+    }
+    
+    .footer-column h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-links {
+        align-items: center;
+    }
+
+    .footer-links a {
+        justify-content: center;
+    }
+
+    .donation-section {
+        padding: 15px;
+    }
+
+    .wallet-address {
+        padding: 10px;
+    }
+
+    .address-text {
+        font-size: 0.75em;
     }
 }
 
