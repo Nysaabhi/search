@@ -14,7 +14,7 @@
     --text-color: #34495e;
     --background-dark: #0A0B0E;
     --border-color: #e0e0e0;
-    --background-color: 1a1a1f;
+    --background-color: #1a1a1f;
     --border-radius: 12px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
