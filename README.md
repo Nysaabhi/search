@@ -4009,6 +4009,17 @@ function createSocialLinks(data) {
         addPulseEffect('bitcoin');
     }, 300000);
 
+function copyToClipboard() {
+    const address = document.querySelector('.address-text').textContent;
+    navigator.clipboard.writeText(address).then(() => {
+        const button = document.querySelector('.copy-button');
+        button.innerHTML = '<i class="fas fa-check"></i>';
+        setTimeout(() => {
+            button.innerHTML = '<i class="fas fa-copy"></i>';
+        }, 2000);
+    });
+}
+
     // Function to copy contract code
     window.copyContractCode = function(cardId) {
         const codeElement = document.querySelector(`#${cardId} .contract-code pre code`);
