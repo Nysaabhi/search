@@ -14,7 +14,7 @@
     --text-color: #34495e;
     --background-dark: #0A0B0E;
     --border-color: #e0e0e0;
-    --background-color: rgb(248, 228, 216);
+    --background-color: 1a1a1f;
     --border-radius: 12px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -112,7 +112,7 @@ main.container {
     height: 60px;
     padding: 15px 20px 15px 50px;
     font-size: 16px;
-    border: 2px solid #000;
+    border: 2px solid #F4A261;
     border-radius: 50px;
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
@@ -291,7 +291,7 @@ main.container {
 .separator-line {
     width: 100vw;
     height: 1px;
-    background-color: #000;
+    background-color: #bbbbbb;
     margin: 20px 0;
     position: relative;
     left: 50%;
