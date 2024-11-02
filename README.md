@@ -729,27 +729,37 @@ main.container {
     padding: 60px 0 30px;
     font-family: 'Inter', sans-serif;
     border-top: 2px solid #FFD700;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
 }
 
+/* Container improvements */
 .footer-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 40px;
+    box-sizing: border-box;
 }
 
 .footer-brand {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-width: 100%;
 }
 
 .footer-logo-section {
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .footer-ink {
@@ -773,6 +783,8 @@ main.container {
     border-radius: 12px;
     padding: 20px;
     margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .donation-title {
@@ -785,20 +797,16 @@ main.container {
 }
 
 .wallet-address {
-    background: rgba(0, 0, 0, 0.2);
-    padding: 12px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 0;
-    border: 1px solid rgba(255, 215, 0, 0.2);
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .address-text {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.85em;
     color: #FFD700;
+    word-break: break-all;
 }
 
 .copy-button {
